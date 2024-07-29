@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+if hash docker 2>/dev/null; then
+  echo "Docker aleady installed"
+else
+  echo "Hello user data from ${app}" >> /home/ec2-user/data.txt
+fi
